@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/html": "^0.6.0",
+    "elysia": "^0.6.16"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "bun-types": "latest",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.44.0",
+    "eslint-config-canonical": "^41.1.7",
+    "tailwindcss": "^3.3.3",
+    "typed-html": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "module": "src/index.ts",
+  "name": "chtmx",
+  "scripts": {
+    "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
+    "tw": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css",
+    "tw:dev": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css --watch"
+  },
+  "type": "module"
+}

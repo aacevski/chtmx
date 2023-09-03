@@ -1,0 +1,20 @@
+{
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "canonical/auto"
+  ],
+  "rules": {
+    "no-console": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/no-unknown-property": "off",
+    "react/style-prop-object": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "react/jsx-key": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-shadow": "off"
+  }
+}
